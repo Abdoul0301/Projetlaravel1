@@ -30,3 +30,9 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
 });
+
+//utilisateur
+Route::resource('utilisateur',\App\Http\Controllers\UserController::class);
+
+//client
+Route::resource('client',\App\Http\Controllers\ClientController::class);

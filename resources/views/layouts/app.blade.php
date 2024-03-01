@@ -33,10 +33,10 @@
                         @auth
                             @if(auth()->user()->type == 'admin')
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Utilisateur</a>
+                                    <a class="nav-link" href="{{route('utilisateur.index')}}">Utilisateur</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Client</a>
+                                    <a class="nav-link" href="{{route('client.index')}}">Client</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Produit</a>
@@ -52,7 +52,7 @@
                                 </li>
                             @else
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Client</a>
+                                    <a class="nav-link" href="{{route('client.index')}}">Client</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Produit</a>
