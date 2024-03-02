@@ -36,3 +36,9 @@ Route::resource('utilisateur',\App\Http\Controllers\UserController::class);
 
 //client
 Route::resource('client',\App\Http\Controllers\ClientController::class);
+
+//produit
+Route::resource('produit',\App\Http\Controllers\ProduitController::class);
+
+//categorie
+Route::resource('cat',\App\Http\Controllers\CategorieController::class);

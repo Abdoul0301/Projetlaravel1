@@ -39,10 +39,10 @@
                                     <a class="nav-link" href="{{route('client.index')}}">Client</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Produit</a>
+                                    <a class="nav-link" href="{{route('produit.index')}}">Produit</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Categorie</a>
+                                    <a class="nav-link" href="{{route('cat.index')}}">Categorie</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Commande</a>
@@ -55,7 +55,7 @@
                                     <a class="nav-link" href="{{route('client.index')}}">Client</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Produit</a>
+                                    <a class="nav-link" href=""{{route('produit.index')}}"">Produit</a>
                                 </li>
                             @endif
                         @endauth
