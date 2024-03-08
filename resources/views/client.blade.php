@@ -8,6 +8,7 @@
                 liste des Clients
             </div>
             <div class="card-body mt-2">
+                <a class="btn btn-secondary float-end"  href="{{route('clientpdf')}}">PDF</a>
                 <a class="btn btn-success float-end"  href="{{route('client.create')}}">Ajouter</a>
                 <table id="datatablesSimple" class="table table-striped">
                     <thead>

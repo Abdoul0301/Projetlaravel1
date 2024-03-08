@@ -3,17 +3,14 @@
 
 @section('content')
     <div class="col-md-10 offset-1 mt-5">
-        <a class="btn btn-success mt-2 float-end"  href="{{route('cat.create')}}">Ajouter</a>
-        <br>
-        <br>
-        <br>
-        <br>
+
         <div class="card">
             <div class="card-header">
                 liste des Categories
             </div>
             <div class="card-body">
 
+                <a class="btn btn-success mt-2 float-end"  href="{{route('cat.create')}}">Ajouter</a>
                 <table id="datatablesSimple" class="table table-striped">
                     <thead>
                     <tr>

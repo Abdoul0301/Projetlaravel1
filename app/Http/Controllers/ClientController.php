@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -100,5 +101,12 @@ class ClientController extends Controller
     {
         Client::destroy($id);
         return to_route('client.index');
+    }
+
+    public function downloadPdf()
+    {
+        $pdf = PDF::loadView('clientpdf');
+
+        return $pdf->download('listeclient.pdf');
     }
 }

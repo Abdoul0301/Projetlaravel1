@@ -36,6 +36,8 @@ Route::resource('utilisateur',\App\Http\Controllers\UserController::class);
 
 //client
 Route::resource('client',\App\Http\Controllers\ClientController::class);
+Route::get('/clientpdf',[\App\Http\Controllers\ClientController::class,'downloadPdf'])->name("clientpdf");
+
 
 //produit
 Route::resource('produit',\App\Http\Controllers\ProduitController::class);
