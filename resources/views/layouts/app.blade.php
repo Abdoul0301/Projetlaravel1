@@ -55,7 +55,7 @@
                                     <a class="nav-link" href="{{route('client.index')}}">Client</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href=""{{route('produit.index')}}"">Produit</a>
+                                    <a class="nav-link" href="{{route('produit.index')}}">Produit</a>
                                 </li>
                             @endif
                         @endauth
