@@ -41,6 +41,9 @@ Route::get('/clientpdf',[\App\Http\Controllers\ClientController::class,'download
 
 //produit
 Route::resource('produit',\App\Http\Controllers\ProduitController::class);
+Route::get('/produitexcel',[\App\Http\Controllers\ProduitController::class,'downloadExcel'])->name("produitexcel");
+
+
 
 //categorie
 Route::resource('cat',\App\Http\Controllers\CategorieController::class);

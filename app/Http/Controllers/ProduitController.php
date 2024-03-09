@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\produitExport;
 use App\Models\Categorie;
 use App\Models\Produit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProduitController extends Controller
 {
@@ -123,5 +125,10 @@ class ProduitController extends Controller
     {
         Produit::destroy($id);
         return to_route('produit.index');
+    }
+    public function downloadExcel()
+    {
+        return Excel::download(new produitExport(), 'listeproduit.xlsx');
+
     }
 }

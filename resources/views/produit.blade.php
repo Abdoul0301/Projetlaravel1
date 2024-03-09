@@ -9,6 +9,7 @@
             </div>
             <div class="card-body mt-2">
                 <a class="btn btn-success float-end"  href="{{route('produit.create')}}">Ajouter</a>
+                <a class="btn btn-secondary float-end"  href="{{route('produitexcel')}}">Excel</a>
                 <table id="datatablesSimple" class="table table-striped">
                     <thead>
                     <tr>
