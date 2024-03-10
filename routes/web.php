@@ -47,3 +47,6 @@ Route::get('/produitexcel',[\App\Http\Controllers\ProduitController::class,'down
 
 //categorie
 Route::resource('cat',\App\Http\Controllers\CategorieController::class);
+
+
+Route::get('/analise',[\App\Http\Controllers\AnaliseController::class,'index'])->name("analise");

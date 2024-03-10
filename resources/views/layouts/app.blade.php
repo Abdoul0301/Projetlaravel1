@@ -48,7 +48,7 @@
                                     <a class="nav-link" href="#">Commande</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Analise</a>
+                                    <a class="nav-link" href="{{route('analise')}}">Analise</a>
                                 </li>
                             @else
                                 <li class="nav-item">

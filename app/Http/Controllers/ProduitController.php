@@ -16,7 +16,7 @@ class ProduitController extends Controller
      */
     public function index()
     {
-        $produit = Produit::paginate(2);
+        $produit = Produit::paginate(3);
         return view('produit',['pp'=>$produit]);
     }
 
