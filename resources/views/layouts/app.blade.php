@@ -32,6 +32,7 @@
                     <ul class="navbar-nav me-auto">
                         @auth
                             @if(auth()->user()->type == 'admin')
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('utilisateur.index')}}">Utilisateur</a>
                                 </li>
@@ -45,7 +46,7 @@
                                     <a class="nav-link" href="{{route('cat.index')}}">Categorie</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Commande</a>
+                                    <a class="nav-link" href="{{route('commande.index')}}">Commande</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('analise')}}">Analise</a>
